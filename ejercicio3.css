@@ -1,0 +1,44 @@
+
+.contenedor{
+   
+    width: 180vh;
+	background-color:white;
+    border:3px solid black;
+	display: flex;
+	align-items: flex-end;
+	
+	align-items: center;
+}
+.col1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    background-color: red;
+    padding:70px;
+    color: white;
+    margin: 0 50vh 0 0;
+}
+.col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    background-color:blue;
+    padding: 70px;
+    color: white;
+    margin: 0 50vh 0 0;
+}
+.col3{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex: 1 1 100%;
+    background-color:green;
+    padding: 70px;
+    color: white;
+    
+}
+
+
+

@@ -1,29 +1,35 @@
 #contenedor {
-	width: 800px;
+
 	background: #8FA68E;
 	overflow: hidden;
 }
+h1,h2, p{ 
+	margin-left: 15px;
+}
 nav {
-	background: #CC3910;
-	
+	background: #ffbb67;
+	height: 110px;
+		
 }
 ul {
 	list-style-type:none;
 	line-height: 4ex;
 }
 a {
-	color:#F1F2C0;
+	color:black;
 	text-decoration: none;
 }
 section {
 	background: #F1F2C0;
-	
-	
-	
+	height: 150px;
+	margin-top: -15px;
+	border: 1px  solid black;
+		
 }
 aside {
 	background: #CCC59E;
-	
+	margin-top: -20px;
+	border: 1px solid black;
 
 }
 

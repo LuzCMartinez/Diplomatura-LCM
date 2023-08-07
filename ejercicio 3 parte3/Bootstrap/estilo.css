@@ -1,0 +1,18 @@
+.container-sm{
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    
+}
+.clearfix{
+    background-color: beige;
+    text-align: center;
+}
+.container{
+    background-color: blanchedalmond;
+    border: solid 1px black;
+}
+.col-12{
+    background-color: azure;
+    text-align: center;
+}

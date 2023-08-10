@@ -1,4 +1,4 @@
-import{BrowserRouter as Router,Roustes,Route } from "react-router-dom";
+import{BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import './App.css';
 import Header from './components/layout/Header';
 import Nav from './components/layout/Nav'
@@ -13,12 +13,12 @@ function App() {
    <Router>
     <Header></Header>
     <Nav/>
-    <Roustes>
+    <Routes>
       <Route path="/" exact element={<HomePage/>} />
       <Route path="/nosotros" exact element={<NosotrosPage/>} />
       <Route path="/novedades" exact element={<NovedadesPage/>} />
       <Route path="/contacto" exact element={<contactoPage/>} />
-    </Roustes>
+    </Routes>
     <Footer/>
    </Router>
       

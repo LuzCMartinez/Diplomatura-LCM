@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countChars(obj){
+    document.getElementById("charNum").innerHTML = obj.value.length+' characters';
+}
+    </script>
+    <textarea name="message" onkeyup="countChars(this);"></textarea>
+    <p id="charNum">0 characters</p>
+</body>
+</html>

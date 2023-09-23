@@ -1,4 +1,4 @@
-const ContactoPage =(props)=> {
+const ContactoPage = (props) =>{
     return(
         <main className="holder contacto">
         <div>
@@ -40,4 +40,4 @@ const ContactoPage =(props)=> {
     </main>
     )
 }
-export default contactoPage;
+export default ContactoPage;

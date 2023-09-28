@@ -1,4 +1,4 @@
-
+import '../../styles/components/layout/Header.css';
 import React from 'react';
 
 const Header =(props)=> {
@@ -6,7 +6,7 @@ const Header =(props)=> {
         <header>
             <div className='holder'>
                 <div className='logo'>
-                    <img src="imagenes/cyberseguridad.jpg" width="100" alt="cyberseguridad"/>
+                    <img src="imagenes/logo.jpg" width="100" alt="cyberseguridad" id='Cyber'/>
                     <h1>Cyberseguridad</h1>
                 </div>
             </div>

@@ -1,13 +1,15 @@
 nav{
-    background-color:rgba(110, 141, 242, 0.335) ;
+    background-color:rgba(58, 187, 226, 0.668) ;
     margin-bottom: 20px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    height:50px;
 }
 nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+   
 }
 nav ul li{
     flex-grow: 1;
@@ -15,14 +17,21 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
-    padding: 3px 6px;
+    padding: 11px 6px;
     display: block;
     text-align: center;
+    font-style:inherit;
+    font-weight: 500;
+
 }
 nav ul li a.activo{
-    background-color: #707aea7e;
+    background-color: rgba(14, 38, 44, 0.494);
+    height: 28px;
+    border-radius: 10px 10px 10px 10px;
 }
 nav ul li a:hover{
     background-color:rgba(0, 0, 0, 0.2);
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
 
 }

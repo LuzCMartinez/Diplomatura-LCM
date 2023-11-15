@@ -5,7 +5,7 @@ import Footer from './components/layout/Footer';
 import ContactoPage from './pages/contactoPage';
 import HomePage from './pages/HomePage';
 import NosotrosPage from './pages/NosotrosPage';
-import NovedadesPage from './pages/NovedadesPage';
+import Consultas from './pages/Consultas';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
     <Routes>
       <Route path="/" exact element={<HomePage/>} />
       <Route path="nosotros" exact element={<NosotrosPage/>} />
-      <Route path="novedades" exact element={<NovedadesPage/>} />
+      <Route path="consultas" exact element={<Consultas/>} />
       <Route path="contacto" exact element={<ContactoPage/>} />
     </Routes>
     </BrowserRouter>

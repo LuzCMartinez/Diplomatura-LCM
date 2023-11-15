@@ -1,5 +1,5 @@
 h2{
-    color:rgba(147, 209, 245, 0.92);
+    color:rgba(58, 187, 226, 0.668);
     font-weight: 400;
 }
 .bienvenidos{
@@ -20,10 +20,10 @@ h2{
     font-size: 20px;
 }
 .testimonio{
-    background-color: #ccc;
+    background-color:rgba(212, 242, 251, 0.668);
     padding: 16px;
     border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgba(24, 114, 142, 0.668);
 }
 .testimonio .cita{
     font-weight: bold;
@@ -36,4 +36,11 @@ h2{
     text-align: center;
     display: block;
     margin: 12px 0;
+}
+
+.respuesta{
+    background-color:rgba(212, 242, 251, 0.668);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px  rgba(24, 114, 142, 0.668);
 }

@@ -1,0 +1,101 @@
+.chat-contacto{
+    width: 600px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content:end;
+    height:50px;
+    background-color:rgba(63, 187, 224, 0.668) ;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0px 0px;
+}
+.chat-container{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    height:90vh;
+    background-color:rgb(232, 249, 254);
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 30px;
+    }
+   
+    .chat-container .bubble-container{
+      display:flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .chat-container .bubble-container.left {
+      width: 55%;
+      margin-right: auto;
+    }
+    .chat-container .bubble-container.right {
+      width: 55%;
+      margin-left: auto;
+      align-items: flex-end;
+    }
+    
+    .chat-container.bubble-container.bubble.bubble-text{
+      color: black;
+    }
+    .bubble-text span{
+      color: rgb(75, 75, 75)
+    }
+    .chat-container .bubble-container.right .bubble .bubble-text > div {
+     position: relative;
+     background-color:rgb(177, 249, 238);
+    }
+    .chat-container .bubble-container.left .bubble .bubble-text > div {
+      position: relative;
+      background-color:rgb(186, 206, 240);
+      display:inline-flex;
+    }
+    
+    .chat-container .bubble-container .bubble .bubble-text > div {
+    padding: 7px;
+    border-radius: 6px;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-between;
+    }
+    .chat-container .bubble-container .bubble .bubble-text .bubble-info {
+      font-size: 10px;
+      color:rgba(102, 101, 101, 0.7);
+      padding:0px 9px;
+      text-align: right;
+      width: 70px;
+      min-width: 70px;
+      max-width:70px;
+      box-sizing: border-box;
+    }
+    .chat-container
+    .bubble-container.left
+    .bubble:nth-child(1)
+    .bubble-text >div::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-right: solid 5px rgb(186, 206, 240);
+      border-top: solid 5px rgb(186, 206, 240);
+      border-left: solid 5px transparent;
+      border-bottom: solid 5px transparent;
+      left: -6px;
+      top: 0;
+    }
+    .chat-container
+    .bubble-container.right
+    .bubble:nth-child(1)
+    .bubble-text >div::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: solid 5px rgb(177, 249, 238);
+      border-top: solid 5px rgb(177, 249, 238);
+      border-right: solid 5px transparent;
+      border-bottom: solid 5px transparent;
+      right: -6px;
+      top: 0;
+    }

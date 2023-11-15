@@ -4,14 +4,14 @@ import React from 'react';
 const Footer =(props) => {
     return(
        <footer>
-        <p>Derechos reservados.Cyberseguridad @2023</p>
+       
         <div className="container__footer">
             <div className="box__footer">
                 <div className="logo">
                     
                 </div>
                 <div className="terms">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
+                    <p>Somos una empresa de cyberseguridad que surgio durante la pandemia para ayudar y concientizar a los usuarios sobre los cyberdelitos, dandoles herramientas y asesoria personalizada</p>
                 </div>
             </div>
            
@@ -20,7 +20,7 @@ const Footer =(props) => {
                 <h2>Cyberseguridad</h2>
                 <a href="/">Home</a>
                 <a href="/nosotros">Nosotros</a>
-                <a href="/novedades">Novedades</a>
+                <a href="/consultas">Consultas</a>
                 <a href="/contacto">Contacto</a>              
             </div>
 
@@ -32,6 +32,9 @@ const Footer =(props) => {
                 <a href="#"><i className="bi bi-instagram"></i> Instagram</a>
             </div>
 
+        </div>
+        <div className="box__copyright">
+            <p>Todos los derechos reservados Cyberseguridad © 2022</p>
         </div>
         
 

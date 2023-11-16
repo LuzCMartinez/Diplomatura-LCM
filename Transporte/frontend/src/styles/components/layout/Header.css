@@ -3,14 +3,13 @@ header{
     background: url('../../../../public/imagenes/banners.JPG') ;
     padding: 10px 0;
     border-radius: 10px 10px 0px 0px;
-    height: 90px;
+    height: 100px;
     font-family:'Open sans';
     
 }
 #Cyber{
     border-radius: 45%;
-    height: 95px;
-    align-items: center;
+    height: 90px;
     margin-left:25px;
 
    

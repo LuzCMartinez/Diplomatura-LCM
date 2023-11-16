@@ -22,7 +22,7 @@ const Consultas =(props)=> {
                 <div className="bubble">
                     <div className="bubble-text">
                         <div>
-                            <span>Hola somos MÁSseguridad</span>
+                            <span>Hola somos Cyberseguridad</span>
                             <div className="bubble-info">16:05</div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const Consultas =(props)=> {
                 <div className="bubble">
                     <div className="bubble-text">
                         <div>
-                            <span>Hola somos MÁSseguridad</span>
+                            <span>Hola somos Cyberseguridad</span>
                             <div className="bubble-info">18:05</div>
                         </div>
                     </div>

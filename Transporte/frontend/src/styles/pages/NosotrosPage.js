@@ -11,7 +11,7 @@ return (
                 <h2>Staff</h2>
                 <div className="personas">
                     <div className="persona">
-                        <img src="imagenes/lucia.jpg" alt="Lucia Cabrera"/>
+                        <img src="imagenes/Lucia.JPG" alt="Lucia Cabrera"/>
                             <h5>Lucia Cabrera</h5>
                             <h6>Fundadora</h6>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptas itaque aut amet maiores corrupti hic. Cumque quia consectetur unde placeat ea quod nobis optio sit assumenda. Unde, pariatur maiores!</p>

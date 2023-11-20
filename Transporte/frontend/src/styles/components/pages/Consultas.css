@@ -8,6 +8,22 @@
     box-sizing: border-box;
     border-radius: 5px 5px 0px 0px;
 }
+#Cyber{
+  width:60px;
+  height: 50px;
+}
+.chat-contacto h1{
+  color:rgba(4, 20, 25, 0.668) ;
+  vertical-align: middle;
+  font-size: 25px;
+  font-weight: 100;
+  display: inline-block;
+  font-style:normal;
+  position: relative;
+  bottom: 25px;
+  margin-left: 20px;
+
+}
 .chat-container{
     width: 600px;
     margin: 0 auto;
@@ -99,3 +115,30 @@
       right: -6px;
       top: 0;
     }
+    form input {
+      flex: 1;
+      width:440px;
+      height:40px;
+      border:none;
+      outline:none;
+      padding-left:5px;
+      font-size: 16px;
+      border-radius: 5px 0 0 5px;
+      }
+    form button{
+      width: 90px;
+      height:40px;
+      font-size: 18px;
+      border:none;
+      outline:none;
+      background-color:rgb(193, 186, 240);
+      color:rgb(75, 75, 75);
+      font-size: 0.8em;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0;
+    }
+    form button:hover{
+      background-color:rgb(177, 249, 238);
+      transition:0.2s ease;
+    }
+    

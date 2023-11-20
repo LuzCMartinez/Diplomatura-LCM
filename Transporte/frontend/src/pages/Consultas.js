@@ -4,7 +4,10 @@ const Consultas =(props)=> {
     return(
         <section className="holder">
 
-           <div className="chat-contacto">Cyberseguridad</div>
+           <div className="chat-contacto">
+           <img src="imagenes/logoc.JPG" alt="cyberseguridad" id='Cyber'/>
+            <h1>Cyberseguridad</h1>
+           </div>
            <div className="chat-container">
            
             <div className="bubble-container right">
@@ -70,7 +73,7 @@ const Consultas =(props)=> {
             </div>
             <form>
                 <input type="text" name="" value="Escriba su consulta ..."/>
-                <button><i className="fa-solid fa-paper-plane"></i></button>
+                <button><i className="fa-solid fa-paper-plane"></i>Enviar</button>
             </form>
 
         </div>

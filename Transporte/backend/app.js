@@ -11,7 +11,7 @@ var pool = require('./models/bd');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var  loginRouter = require('./routes/admin/login');
-var adminRouter =require ('./routes/admin/novedades');
+var adminRouter =require ('./routes/admin/consultas');
 var app = express();
 
 // view engine setup
@@ -48,7 +48,7 @@ secured =async(req,res,next) =>{
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades',secured, adminRouter);
+app.use('/admin/consultas',secured, adminRouter);
 
 
 app.use(function(req, res, next) {

@@ -5,7 +5,7 @@ const Consultas =(props)=> {
         <section className="holder">
 
            <div className="chat-contacto">
-           <img src="imagenes/logoc.JPG" alt="cyberseguridad" id='Cyber'/>
+           <img src="imagenes/logoc.JPG" alt="cyberseguridad" id='Cyberw'/>
             <h1>Cyberseguridad</h1>
            </div>
            <div className="chat-container">

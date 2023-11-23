@@ -14,6 +14,16 @@
     <div class="row">
             <p class="text-end"> Hola {{usuario}} ! <a class="btn btn-danger" href="/admin/login/logout">Cerrar sesion <i class="fas fa-sing-out-alt"></i></a></p>
     </div>
+      <div class="row">
+        <div class="col-7">
+            <h3>Listado de consultas</h3>
+        </div>
+        <div class="col-5 text-end">
+            <a class="btn btn-success" href=""><i class="fa fa-plus" aria-hidden="true"></i>Nuevo</a>
+
+        </div>
+      </div>
+
      <section class="holder">
 
            <div class="chat-contacto">
@@ -28,60 +38,72 @@
                         <div>
                             <span>¿Es seguro conectarse a redes Wifi públicas?</span>
                             <div class="bubble-info">16:05</div>
+                             
                         </div>
                     </div>
-                </div>
+                    <div class="text-end">
+                        <td >
+                            <a class="btn btn-secondary" href=" "><i class="bi bi-pencil-square" aria-hidden="true"></i></a>
+                            <a class="btn btn-secondary" href=""><i class="bi bi-trash3-fill" aria-hidden="true" ></i></a>
+                        </td>
+                    </div>
+                </div> 
+                
             </div>
-
+           
+       {{#each consultas}}
             <div class="bubble-container left">
                 <div class="bubble">
                     <div class="bubble-text">
                         <div>
-                            <span>Hola somos Cyberseguridad</span>
+                            <span>{{Respuesta}}</span>
                             <div class="bubble-info">16:05</div>
                         </div>
                     </div>
-                </div>
-
-                <div class="bubble">
-                    <div class="bubble-text">
-                        <div>
-                            <span>No, aunque tengan contraseña o no, las redes Wifi públicas pueden ser accedidas por
-                                personas con intenciones maliciosas</span>
-                            <div class="bubble-info">16:10</div>
-                        </div>
+                     <div class="icon">
+                        <td >
+                            <a class="btn btn-secondary" href=" "><i class="bi bi-pencil-square" aria-hidden="true"></i></a>
+                            <a class="btn btn-secondary" href=""><i class="bi bi-trash3-fill" aria-hidden="true" ></i></a>
+                        </td>
                     </div>
+                    
                 </div>
-            </div>
+           </div>
+            {{/each}}
+           {{#each consultas}}
             <div class="bubble-container right">
                 <div class="bubble">
                     <div class="bubble-text">
                         <div>
-                            <span>¿Qué cosas puedo hacer en un wifi público?</span>
+                            <span>{{Pregunta}}</span>
                             <div class="bubble-info">18:00</div>
                         </div>
                     </div>
+                <div class="text-end">
+                        <td >
+                            <a class="btn btn-secondary" href=" "><i class="bi bi-pencil-square" aria-hidden="true"></i></a>
+                            <a class="btn btn-secondary" href=""><i class="bi bi-trash3-fill" aria-hidden="true" ></i></a>
+                        </td>
+                    </div>
                 </div>
             </div>
+            {{/each}}
             <div class="bubble-container left">
                 <div class="bubble">
                     <div class="bubble-text">
                         <div>
-                            <span>Hola somos Cyberseguridad</span>
+                            <span>Respuesta</span>
                             <div class="bubble-info">18:05</div>
                         </div>
                     </div>
-                </div>
-                <div class="bubble">
-                    <div class="bubble-text">
-                        <div>
-                            <span>Cualquier actividad que no involucre el ingreso de información privada, como por
-                                ejemplo:
-                                ver noticias, escuchar música, mirar videos o leer un blog.</span>
-                            <div class="bubble-info">18:10</div>
-                        </div>
+                     <div class="icon">
+                        <td >
+                            <a class="btn btn-secondary" href=" "><i class="bi bi-pencil-square" aria-hidden="true"></i></a>
+                            <a class="btn btn-secondary" href=""><i class="bi bi-trash3-fill" aria-hidden="true" ></i></a>
+                        </td>
                     </div>
                 </div>
+                
             </div>
             <form>
                 <input type="text" name="" value="Escriba su consulta ..."/>

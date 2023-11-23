@@ -94,10 +94,11 @@ header h1{
       width: 55%;
       margin-right: auto;
     }
+
 .chat-container .bubble-container.right {
       width: 55%;
       margin-left: auto;
-      align-items: flex-end;
+    
     }
     
     .chat-container.bubble-container.bubble.bubble-text{

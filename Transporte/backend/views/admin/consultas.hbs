@@ -19,7 +19,7 @@
             <h3>Listado de consultas</h3>
         </div>
         <div class="col-5 text-end">
-            <a class="btn btn-success" href=""><i class="fa fa-plus" aria-hidden="true"></i>Nuevo</a>
+            <a class="btn btn-success" href="/admin/consultas/agregar"><i class="fa fa-plus" aria-hidden="true"></i>Nuevo</a>
 
         </div>
       </div>
@@ -32,24 +32,24 @@
            </div>
            <div class="chat-container">
            
+              {{#each consultas}}
             <div class="bubble-container right">
                 <div class="bubble">
                     <div class="bubble-text">
                         <div>
-                            <span>¿Es seguro conectarse a redes Wifi públicas?</span>
-                            <div class="bubble-info">16:05</div>
-                             
+                            <span>{{Pregunta}}</span>
+                            <div class="bubble-info">18:00</div>
                         </div>
                     </div>
-                    <div class="text-end">
+                <div class="text-end">
                         <td >
                             <a class="btn btn-secondary" href=" "><i class="bi bi-pencil-square" aria-hidden="true"></i></a>
                             <a class="btn btn-secondary" href=""><i class="bi bi-trash3-fill" aria-hidden="true" ></i></a>
                         </td>
                     </div>
-                </div> 
-                
+                </div>
             </div>
+            {{/each}}
            
        {{#each consultas}}
             <div class="bubble-container left">
@@ -70,41 +70,10 @@
                 </div>
            </div>
             {{/each}}
-           {{#each consultas}}
-            <div class="bubble-container right">
-                <div class="bubble">
-                    <div class="bubble-text">
-                        <div>
-                            <span>{{Pregunta}}</span>
-                            <div class="bubble-info">18:00</div>
-                        </div>
-                    </div>
-                <div class="text-end">
-                        <td >
-                            <a class="btn btn-secondary" href=" "><i class="bi bi-pencil-square" aria-hidden="true"></i></a>
-                            <a class="btn btn-secondary" href=""><i class="bi bi-trash3-fill" aria-hidden="true" ></i></a>
-                        </td>
-                    </div>
-                </div>
-            </div>
-            {{/each}}
-            <div class="bubble-container left">
-                <div class="bubble">
-                    <div class="bubble-text">
-                        <div>
-                            <span>Respuesta</span>
-                            <div class="bubble-info">18:05</div>
-                        </div>
-                    </div>
-                     <div class="icon">
-                        <td >
-                            <a class="btn btn-secondary" href=" "><i class="bi bi-pencil-square" aria-hidden="true"></i></a>
-                            <a class="btn btn-secondary" href=""><i class="bi bi-trash3-fill" aria-hidden="true" ></i></a>
-                        </td>
-                    </div>
-                </div>
+         
+           
                 
-            </div>
+            <div>
             <form>
                 <input type="text" name="" value="Escriba su consulta ..."/>
                 <button><i class="fa-solid fa-paper-plane"></i>Enviar</button>

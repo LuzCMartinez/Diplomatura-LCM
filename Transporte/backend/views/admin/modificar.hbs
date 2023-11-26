@@ -13,20 +13,20 @@
 <div class="container" style="margin:50px auto">
     <div class="row">
      <div class="col-6 offset-3">
-        <h4>Agregar una nueva consulta</h4>
-        <form action="/admin/consultas/agregar" method="post">
-        <div class="mb-3 row">
-            <input type="text" class="form-control" placeholder="Pregunta" name="pregunta">
+        <h4>Modificar una nueva consulta</h4>
+        <form method="post" action="/admin/consultas/modificar">
+        <input type="hidden" value="{{consulta.id}}" name="id">
+        <div class="form-group">
+            <input type="text" placeholder="Pregunta"
+            value="{{consulta.pregunta}}" class="form-control" name="pregunta">
         </div>
-         <div class="mb-3 row">
-            <textarea type="text" class="form-control" placeholder="Respuesta" name="respuesta"></textarea>
-         </div>
-         <button type="submit" class="btn btn-primary">Guardar</button>
-        </form>
-        {{#if error}}
-        <p>{{message}}</p>
-        {{/if}}
-     </div>   
-    </div>
+        <div class="form-group">
+            <textarea placeholder="Respuesta" class="form-control" name="respuesta">{{consulta.respuesta}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Modificar</button>
+</form>
+ {{#if error}}
+<p>{{message}}</p>
+{{/if}}
 </div>
-</body>
+</div>

@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var fileUpload = require ('express-fileupload');
+var cors = require('cors');
 
 require('dotenv').config();
 var session = require("express-session");
@@ -13,6 +14,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var  loginRouter = require('./routes/admin/login');
 var adminRouter =require ('./routes/admin/consultas');
+var apiRouter = require ('./routes/api');
 var app = express();
 
 // view engine setup
@@ -55,7 +57,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/consultas',secured, adminRouter);
-
+app.use ('/api',cors(), apiRouter);
 
 app.use(function(req, res, next) {
   next(createError(404));
